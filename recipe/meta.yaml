@@ -1,6 +1,6 @@
 
 {% set name = "pydda" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -26,6 +26,8 @@ requirements:
     - matplotlib
     - arm_pyart
     - cartopy
+    - dask
+    - distributed
 
 test:
   requires:
