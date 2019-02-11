@@ -32,6 +32,7 @@ requirements:
 test:
   requires:
     - pytest
+    - distributed
   imports:
     - pydda
   commands:
