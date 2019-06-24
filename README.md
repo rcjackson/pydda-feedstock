@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About pydda
 ===========
 
@@ -13,7 +9,7 @@ Feedstock license: BSD 3-Clause
 
 Summary: Pythonic Direct Data Assimilation
 
-PyDDA is a purely Pythonic package for developing wind retrievals.
+PyDDA is a Pythonic package for developing wind retrievals.
 It uses the variational technique for assmilating together winds
 derived from radars and models.
 
@@ -21,8 +17,15 @@ derived from radars and models.
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pydda-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pydda-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2518&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pydda-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
