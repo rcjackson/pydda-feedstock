@@ -26,10 +26,13 @@ requirements:
     - matplotlib
     - arm_pyart
     - cartopy
+    - dask
+    - distributed
 
 test:
   requires:
     - pytest
+    - distributed
   imports:
     - pydda
   commands:
