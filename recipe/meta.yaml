@@ -2,7 +2,6 @@
 {% set name = "pydda" %}
 {% set version = "0.4.1" %}
 
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -47,7 +46,7 @@ about:
   summary: 'Pythonic Direct Data Assimilation'
 
   description: |
-    PyDDA is a purely Pythonic package for developing wind retrievals.
+    PyDDA is a Pythonic package for developing wind retrievals.
     It uses the variational technique for assmilating together winds
     derived from radars and models.
   doc_url: http://openradarscience.org/PyDDA
