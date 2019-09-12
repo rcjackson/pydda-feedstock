@@ -28,6 +28,7 @@ requirements:
     - cartopy
     - dask
     - distributed
+    - xorg-libx11
 
 test:
   requires:
