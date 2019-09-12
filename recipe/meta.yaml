@@ -19,6 +19,8 @@ requirements:
   host:
     - python
     - pip
+  build:
+    - {{ cdt('xorg-x11-proto-devel') }}
   run:
     - python
     - numpy
@@ -28,7 +30,6 @@ requirements:
     - cartopy
     - dask
     - distributed
-    - xorg-libx11
 
 test:
   requires:
