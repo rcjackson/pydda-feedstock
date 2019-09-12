@@ -38,6 +38,7 @@ test:
   imports:
     - pydda
   commands:
+    - export MPL_BACKEND="agg"
     - py.test --pyargs pydda
 
 about:
