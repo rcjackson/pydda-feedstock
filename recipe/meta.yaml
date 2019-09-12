@@ -16,11 +16,11 @@ build:
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
+  build:
+    - {{ cdt('xorg-x11-proto-devel') }}
   host:
     - python
     - pip
-  build:
-    - {{ cdt('xorg-x11-proto-devel') }}
   run:
     - python
     - numpy
