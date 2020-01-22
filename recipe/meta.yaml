@@ -1,6 +1,6 @@
 
 {% set name = "pydda" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,15 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b62e06e9b8c4b17e20cabc1397afec0305009033343eb78fc03c306f2af6efc5
+  sha256: 219311894dd1afe3c0464a92417b8df63d406a76a2a1f9870fffc23b07cce226
+
+extra:
+    channels:
+       - conda-forge
 
 build:
-  noarch: python
-  number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+    number: 0
+    script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
@@ -24,10 +27,11 @@ requirements:
     - numpy
     - scipy
     - matplotlib
-    - arm_pyart
     - cartopy
     - dask
     - distributed
+    - six
+
 
 test:
   requires:
@@ -35,6 +39,7 @@ test:
     - distributed
   imports:
     - pydda
+    - arm_pyart
   commands:
     - py.test --pyargs pydda
 
