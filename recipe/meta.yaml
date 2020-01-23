@@ -10,10 +10,6 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 219311894dd1afe3c0464a92417b8df63d406a76a2a1f9870fffc23b07cce226
 
-extra:
-    channels:
-       - conda-forge
-
 build:
     number: 0
     script: "{{ PYTHON }} -m pip install . --no-deps -vv"
@@ -31,7 +27,6 @@ requirements:
     - dask
     - distributed
     - six
-
 
 test:
   requires:
