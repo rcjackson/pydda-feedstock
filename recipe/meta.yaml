@@ -35,7 +35,6 @@ test:
     - distributed
   imports:
     - pydda
-    - arm_pyart
   commands:
     - py.test --pyargs pydda
 
