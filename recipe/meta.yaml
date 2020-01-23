@@ -16,7 +16,7 @@ build:
 
 requirements:
   host:
-    - python
+    - python=3.7
     - pip
   run:
     - python
@@ -27,6 +27,7 @@ requirements:
     - dask
     - distributed
     - six
+    - arm_pyart
 
 test:
   requires:
