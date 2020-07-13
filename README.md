@@ -5,7 +5,7 @@ Home: http://openradarscience.org/PyDDA
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Pythonic Direct Data Assimilation
 
