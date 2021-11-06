@@ -1,5 +1,5 @@
 {% set name = "pydda" %}
-{% set version = "0.5.2" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -33,6 +33,9 @@ test:
   requires:
     - pytest
     - distributed
+    - jax
+    - tensorflow==2.6
+    - tensorflow-probability
   imports:
     - pydda
   commands:
