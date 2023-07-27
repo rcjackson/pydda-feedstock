@@ -1,11 +1,11 @@
-About pydda
-===========
+About pydda-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydda-feedstock/blob/main/LICENSE.txt)
 
 Home: http://openradarscience.org/PyDDA
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydda-feedstock/blob/main/LICENSE.txt)
 
 Summary: Pythonic Direct Data Assimilation
 
