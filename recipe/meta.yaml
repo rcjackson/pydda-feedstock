@@ -1,5 +1,5 @@
 {% set name = "pydda" %}
-{% set version = "1.5.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9a5c7c2f5beef17c506df4bc9f824a0acfeedd14280b8015ea4fc9dff5886918
+  sha256: e870bb532b814675c901291cdc90978328645e7a50b1c8556d52f343d0351968
 
 build:
   noarch: python
@@ -33,6 +33,7 @@ test:
   requires:
     - pytest
     - distributed
+    - cfgrib
   imports:
     - pydda
   commands:
